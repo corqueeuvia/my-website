@@ -10,40 +10,165 @@
     <meta property="og:image" content="files/caique.jpeg">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
+
+    <!--IMPORTAÇÃO DE ESTILOS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Secular+One&family=Staatliches&display=swap" rel="stylesheet">
+
 </head>
+<style>
+    header {
+        background-color: #004A1F;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        padding-top: 10px;
+        padding-bottom: 10px;       
+    }
+
+    #conteudo-header {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    p.subtitulo {
+        font-size: larger;
+        font-style: italic;
+    }
+
+    p.descricao {
+        line-height: 1.5em;
+    }
+
+    body {
+        background-color: #061a0e;
+        margin: 0 auto;
+        color: rgb(223, 238, 224);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+        color: #00D659;
+    }
+
+    #conteudo-site {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .link, .data-entrega {
+        width: 40%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border-radius: 10px;
+        color: #00D659;
+        line-height: 50px;
+    }
+
+    .data-entrega {
+        position: relative;
+        top: -66px;
+        left: 32em;
+    }
+
+    footer {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #000000;
+        text-align: center;
+        line-height: 2em;
+        padding: 10px;
+    }
+
+</style>
 <body>
     <header>
-        <h1>Meu árduo trabalhinho</h1>
-        <p>Esta página pode te linkar pra todas as páginas que criei até agora</p>
+        <section id="conteudo-header">
+        <h1>Todo meu árduo trabalho</h1>
+        <p class="subtitulo">Esta página pode te linkar pra <strong>todas</strong> as páginas que criei até agora!</p>
+        <p class="descricao">Cada página foi desenvolvida para cumprir os requisitos de uma atividade proposta. E em cada uma eu tinha um nível diferente de conhecimento. Abaixo elas estão em ordem cronológica e da forma em que foram entregues na época. Para ver as melhorias aplicadas a cada uma, nesta própria página e todos meus projetos em tempo real, <a href="https://github.com/corqueeuvia/my-website">acesse este repositório no meu GitHub!</a></p>
+        </section>
     </header>
+    
+    <section id="conteudo-site">
+        <h2>Sobre HTML</h2>
+        <p class="subtitulo">A primeira proposta foi criar, em HTML, uma página explicando HTML. Criativo, não?</p>
+        <p class="descricao">A página deveria mostrar o uso das tags:
+            <ul>
+                <li><code>&lt!DOCTYPE&gt</code></li>
+                <li><code>&lthtml&gt</code></li>
+                <li><code>&lthead&gt</code></li>
+                <li><code>&ltbody&gt</code></li>
+                <li><code>&ltmeta&gt</code></li>
+                <li><code>&lth1&gt</code> a <code>&lth6&gt</code></li>
+                <li><code>&ltp&gt</code></li>
+                <li><code>&ltimg&gt</code></li>
+                <li><code>&lta&gt</code></li>
+                
+            </ul>
+        </p>
+        <p class="link"><a href="sobre-html.html">Veja como ficou!</a></p>
+        <p class="data-entrega">► Data de entrega: 01.10.2021</p>
 
-    <h2>Sobre HTML</h2>
-    <p>A primeira proposta foi criar, em HTML, uma página explicando HTML. Criativo, não?</p>
-    <p><a href="sobre-html.html">Acesse aqui!</a></p>
+        <h2>Materiais Lovelace</h2>
+        <p class="subtitulo">A segunda tarefa foi cumprir uns simples requisitos. Nessa eu exagerei!</p>
+        <p class="descricao">Criar uma página HTML que possua:
+            <ul>
+                <li>Formatação de textos (ex.: "b", "strong", "i");</li>
+                <li>Adição de cores usando o atributo "style";</li>
+                <li>Textos clicáveis que direcionem para outra página usando a tag "a";</li>
+                <li>Imagens que, ao ser clicadas, abram a imagem em uma nova aba usando o atributo "target";</li>
+                <li>Uma tabela com no mínimo 4 linhas e 3 colunas usando a tag "table";</li>
+                <li>Um comentário que não será exibido ao usuário.</li>
+            </ul>
+            <p>Em minha defesa: não se dá o fim de semana todo como prazo se não quer receber menos de 600 linhas de código como resposta!</p>
+        </p>
+        <p class="link"><a href="materiais-lovelace.html">Veja como ficou!</a></p>
+        <p class="data-entrega">► Data de entrega: 04.10.2021</p>
 
-    <h2>Materiais Lovelace</h2>
-    <p>A segunda tarefa foi cumprir uns simples requisitos. Nessa eu exagerei!</p>
-    <p><a href="materiais-lovelace.html">Acesse aqui!</a></p>
+        <h2>Radio button</h2>
+        <p class="subtitulo">Aqui aprendemos a usar o <code>&ltinput type="radio"&gt</code> e eu o apliquei em uma questão que você <strong>precisa</strong> se perguntar.</p>
+        <p class="descricao">Requisitos:
+            <ul>
+                <li>Usar o input do tipo radio;</li>
+                <li>Ao clicar no label do botão a seleção deve ser feita;</li>
+                <li>As opções devem ser excludentes entre si: ao clicar em uma, a anteriormente selecionada deve ser desmarcada.</li>
+            </ul>
+        </p>
+        <p class="link"><a href="radio-button.html">Veja como ficou!</a></p>
+        <p class="data-entrega">► Data de entrega: 05.10.2021</p>
 
-    <h2>Radio button</h2>
-    <p>Aqui aprendemos a usar o <code>&ltinput type="radio"&gt</code> e eu o apliquei em uma questão fundamental.</p>
-    <p><a href="radio-button.html">Acesse aqui!</a></p>
+        <h2>DEMO Form</h2>
+        <p class="subtitulo">A proposta era demonstrar o uso de todos os inputs de formulário em um formulário (criatividade não brinca em serviço, né?)</p>
+        <p class="descricao">Esta página é resposta a uma das perguntas do desafio do dia. O enunciado pedia para demonstrar todos os inputs de um formulário em funcionamento, então fiz um formulário com muito amor pra isso. Abra o link, abra seu coração! ♥</p>
+        <p class="link"><a href="demo-form.html">Veja como ficou!</a></p>
+        <p class="data-entrega">► Data de entrega: 06.10.2021</p>
 
-    <h2>DEMO Form</h2>
-    <p>A proposta era demonstrar o uso de todos os inputs de formulário em um formulário (criatividade não brinca em serviço, né?)</p>
-    <p><a href="demo-form.html">Acesse aqui!</a></p>
+        <h2>PixMigs</h2>
+        <p class="subtitulo">Deveríamos criar uma página bem apresentável usando todos os conhecimentos obtidos até agora.</p>
+        <p class="descricao">Em um só trabalho devíamos ter usado os conhecimentos de formulário, as tags básicas de HTML, cores e destaque com o CSS inline e gerar uma página bonitona. Infelizmente pequei na beleza. Mas também, quem põe a própria foto em um trabalho pra entregar?!</p>
+        <p class="link"><a href="pix-migs.html">Veja como ficou!</a></p>
+        <p class="data-entrega">► Data de entrega: 06.10.2021</p>
 
-    <h2>PixMigs</h2>
-    <p>Deveríamos criar uma página bem apresentável usando todos os conhecimentos obtidos até agora. Falhei miseravelmente na apresentação, mas usei tudo que tinha direito!</p>
-    <p><a href="pix-migs.html">Acesse aqui!</a></p>
-
-    <h2>Mídias favoritas</h2>
-    <p>Pra demonstrar que aprendi a usar as tags <code>&ltaudio&gt</code> e <code>&ltvideo&gt</code> comparitlhei aqui minhas mídias favoritas de cada categoria. Não saia sem apertar o play.</p>
-    <p><a href="midias-favoritas.html">Acesse aqui!</a></p>
+        <h2>Mídias favoritas</h2>
+        <p class="subtitulo">Pra demonstrar que aprendi a usar as tags <code>&ltaudio&gt</code> e <code>&ltvideo&gt</code> compartilhei aqui minhas mídias favoritas de cada categoria.</p>
+        <p class="descricao">Requisitos:
+            <ul>
+                <li>Usar os elementos <code>&ltaudio&gt</code> e <code>&ltvideo&gt</code>;</li>
+                <li>Ambos deviam executar <strong>localmente</strong> os arquivos, não a partir de uma URL da internet.</li>
+            </ul>
+            Na minha opinião? Minha masterpiece até o momento! Também, o site une as duas maiores obras de áudio e vídeo (vídeo, não cinema) da história da humanidade! De novo: na minha opinião.
+        </p>
+        <p class="link"><a href="midias-favoritas.html">Veja como ficou!</a></p>
+        <p class="data-entrega">► Data de entrega: 08.10.2021</p>
+    </section>
+    
 </body>
 <footer>
-    <p>Todos os direitos <b>nada</b> reservados</p>
-    <a href="https://www.linkedin.com/in/corcoviacaique" target="_blank">
+    <p>Todos os direitos <b>nada</b> reservados a:</p>
+    <p>
+        <a href="https://www.linkedin.com/in/corcoviacaique" target="_blank">
         Caique C. O. Corcovia
-    </a>
+        </a>
+    </p>
 </footer>
