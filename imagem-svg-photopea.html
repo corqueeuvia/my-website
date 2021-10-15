@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG do Caique</title>
+    </head>
+    <body style="background-color:rgb(10, 5, 39);color: white; font-family: Arial, Helvetica, sans-serif">
+
+        <h1>Imagens SVG</h1>
+
+        <p>Aqui ela foi importada como imagem pela tag <code>&lt;img&gt;</code>:</p>
+
+        <img src="files/email-icon.svg" width="150" height="150" title="email-icon"/>
+
+        <p>E aqui a mesma imagem foi incorporada pela tag <code>&lt;svg&gt;</code>:</p>
+    
+        <svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="150" height="150">
+            <title>email-icon</title>
+            <defs>
+                <image  width="600" height="600" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQMAAACEqAqfAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAABDSURBVHic7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+DbIgAAH5HQULAAAAAElFTkSuQmCC"/>
+            </defs>
+            <style>
+                tspan { white-space:pre }
+                .shp0 { fill: none;stroke: #ffffff;stroke-width: 32 } 
+                .shp1 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 22 } 
+                .shp2 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 11 } 
+            </style>
+            <use id="Background" href="#img1" x="0" y="0" />
+            <path id="Camada 2" class="shp0" d="M50 165C50 156.72 56.72 150 65 150L534 150C542.28 150 549 156.72 549 165L549 435C549 443.28 542.28 450 534 450L65 450C56.72 450 50 443.28 50 435L50 165Z" />
+            <path id="Forma 1" class="shp1" d="M59.26 156.43L59 152.83L542.74 152L543 155.61C543 155.61 389.32 354.16 301 354.16C202.08 354.16 59.26 156.43 59.26 156.43Z" />
+            <path id="Forma 2" class="shp2" d="M57.57 447.06L53.43 444.27L164.43 279.27L168.57 282.06L57.57 447.06Z" />
+            <path id="Forma 3" class="shp2" d="M541.35 445.33L537.09 447.94L432.95 278.24L437.21 275.62L541.35 445.33Z" />
+        </svg>
+        
+        <p>Note que a imagem na verdade tem 600px x 600px e aqui ela foi usada com 150px x 150px e isso não reduz em nada sua qualidade!</p>
+        <p>E mesmo que você dê muito zoom na tela, a imagem não ficará pixelizada. É a mágica do SVG!</p>
+        <h2 style="color: silver;">Confira o tamanho da imagem:</h2>
+        <p >
+            <ol style="color: silver;">
+                <li>Clique na imagem com o botão direito;</li>
+                <li>selecione "abrir em uma nova guia";</li>
+                <li>na nova guia, clique com botão direito;</li>
+                <li>selecione "inspecionar";</li>
+                <li>na aba "elements" clique no elemento <code>&lt;use&gt;</code>;</li>
+                <li>veja que na imagem aparecerá "use #Background 600 x 600".</li>
+            </ol>
+        </p>
+    </body>
+</html>
