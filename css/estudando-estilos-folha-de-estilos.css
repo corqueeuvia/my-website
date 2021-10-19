@@ -1,0 +1,14 @@
+/*todas as configurações abaixo serão sobrescritas pelo CSS inline e pelo CSS interno porque o navegador as prioriza em detrimento do CSS externo, exceto duas: */
+
+body{
+    text-align: center; /*esta, porque nem o CSS interno nem o inline no documento HTML fizeram especificações de alinhamento para o elemento body*/
+    background-color: purple; 
+}
+.com-classe {
+    background-color:black;
+    color: greenyellow;
+}
+h1, p {
+    background-color: darkslategray !important; /*e esta, porque o !important sobrescreve tudo, já que importância tem prioridade mais alta do que especificidade e ordem na interpretação do navegador*/
+    color:purple;
+}

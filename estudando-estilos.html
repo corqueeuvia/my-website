@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estudando estilos com CSS</title>
+        <!--abaixo adicionei uma folha de estilo para esta página. Suas definições serão sobresritas pelas definições daqui, veja os comentários na folha de estilo para entender o porquê-->
+        <link rel="stylesheet" type="text/css" href="https://corqueeuvia.github.io/my-website/css/estudando-estilos-folha-de-estilos.css">
+    </head>
+    <body style="background-color: darkslategray"> <!--isto é o CSS inline: usar style como
+                                                     atributo na tag que deseja estilizar-->
+        <h1>Este título não tem classe</h1>
+        <p>Este parágrafo também não...</p>
+        <h1 class="com-classe">Mas este título tem classe!</h1>
+        <p class="com-classe">E este parágrafo também!</p>
+        
+        <!--aqui começa a tag style, que caracteriza o uso do CSS interno ao HTML-->
+        <style>
+        
+            body {
+                background-color: goldenrod;
+                font-family: arial;
+            }
+
+            /*mesmo com esta atribuição de fundo amarelo ao body, o body da página é cinza. Isso acontece porque o que é definido pelo CSS inline sempre sobrescreverá as definições feitas em CSS na tag style (este caso) ou CSS externo (com uma folha de estilo) (!) veja os comentários na folha de estilo para ver exceções */
+
+            .com-classe {
+                background-color: darkmagenta;
+                color: darkorange;
+            }
+            h1, p {
+                background-color: blue;
+                color:chartreuse;
+            }
+
+            /*as atribuições de estilo feitas aos elementos da classe .com-classe sobrescrevem as atribuições de estilo feitas aos elementos h1 e p, mesmo tendo sido feitas ANTES, porque sua especificidade é maior, por isso o primeiro título e parágrafo tem uma cor de fonte e os segundos tem outra*/
+        </style>
+    </body>
+</html>
