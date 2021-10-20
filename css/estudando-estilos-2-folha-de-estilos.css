@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #db9ead88;
+    width: 90%;
+    margin: 0 auto;
+    font-size: large;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h1, h2, h2 + p {
+    color: #241571; 
+}
+
+#titulo-principal {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2+p::first-letter {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+a {
+   text-decoration: none;
+   color: #008200;
+}
+
+a:hover {
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.vantagens {
+    color:#DB0053;
+    display: flex;
+       
+}
+
+div[class="texto-vantagens"] {
+    margin: 0 auto;
+    background-color: #241571;
+    border-radius: 20px;
+    width: 40%;
+    padding: 15px; 
+    
+}
+
+ul + a {
+    color: white;
+    margin-left: 150px;
+} 
