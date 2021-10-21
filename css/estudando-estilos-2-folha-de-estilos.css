@@ -36,22 +36,27 @@ a:hover {
 img {
     width: 300px;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 0 auto;  
+}
+
+.tipos-de-gato {
+    padding: 100px;
+    align-content: space-around;
 }
 
 .vantagens {
-    color:#DB0053;
-    display: flex;
-       
+    color:#4599e7;
+    display: flex;      
 }
 
 div[class="texto-vantagens"] {
-    margin: 0 auto;
-    background-color: #241571;
     border-radius: 20px;
-    width: 40%;
-    padding: 15px; 
-    
+    background: #241571c7;
+    box-shadow: inset 21px 21px 57px #180e4d,
+                inset -11px -11px 37px #1f0d77;
+    margin: 0 auto;
+    padding: 10px;
+    width: 60%;    
 }
 
 ul + a {
