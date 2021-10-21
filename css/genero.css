@@ -1,0 +1,60 @@
+.caixinha {
+    padding: 35px;
+    text-align: justify;
+    border: 3px solid gray;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+#atracao, #sexo, #identidade, #expressao {
+    width: 25%;
+}
+
+#sexo {
+    overflow: visible;
+}
+
+#atracao {
+    overflow: hidden;
+}
+
+#identidade {
+    overflow: scroll;
+}
+
+#expressao {
+    overflow: auto;
+}
+
+#identidade-cont {
+    border: 3px solid gray;
+    width: 25%;
+    margin: 0 50%;
+}
+
+#leia-mais {
+    font-size: small;
+    background-color: indigo;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+a {
+    color: lawngreen;
+    text-decoration: none;
+}
+
+a:hover, #leia-mais:hover {
+    color:indigo;
+    background-color: lawngreen;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+}

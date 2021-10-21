@@ -1,0 +1,33 @@
+#width {
+    border: 3px solid orangered;
+    width: 200px;
+    color: orangered;
+}
+
+#height {
+    border: 3px solid lawngreen;
+    background-color: lawngreen;
+    display: block;
+    height: 80px;
+}
+
+#padding {
+    width: 200px;
+    padding: 40px;
+    color:navy ;
+}
+
+#margin {
+    border: 1.5px solid green;
+    margin: 40px;
+    color: green;
+}
+
+#span {
+    background-color: deepskyblue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
