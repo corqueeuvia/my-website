@@ -1,0 +1,54 @@
+body {
+    margin: 0 0;
+}
+main {
+    font-size: larger;    
+}
+header {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    height: 20vh;
+    color: whitesmoke;
+    background-color: #2944A3;
+}
+.cabecalho {
+    margin: 0;
+    padding: 10px;    
+}
+.cabecalho + p {
+    color: rgb(135, 206, 250);
+}
+.poesia {
+    background-color: #ACF060;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+#sem-titulo {
+    font-family: 'Anton', sans-serif;
+    font-size: xx-large;
+    text-decoration: overline; 
+    color: #F5491B;
+}
+span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    vertical-align: middle;
+    color: #305BF0;
+    text-decoration: overline #ACF060;  
+}
+footer {
+    background-color: #ACF060;
+    font-family: 'Major Mono Display', monospace;
+    color: #2944A3;
+    font-size: large;
+    text-align: center;    
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    height: 10vh;
+    width: 100%;
+    writing-mode: vertical-rl;
+}
