@@ -51,7 +51,7 @@ header p {
 }
 
 #imagem {
-    background-image: url("files/vegan.svg");
+    background-image: url('files/vegan.svg')
     background-size: cover;
     color: rgb(244, 248, 244);
 
