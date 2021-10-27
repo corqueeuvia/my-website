@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pride</title>
+        <meta charset="utf-8"/>
+
+        <meta property="og:title" content="Be proud!">
+        <meta property="og:description" content="Get colors with pride.">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://i.ibb.co/r7rpMGH/pride-metadados.png">
+        <meta property="og:image" content="">
+        <meta property="og:image:width" content="300">
+        <meta property="og:image:height" content="300">
+
+        <link type="text/css" rel="stylesheet" href="css/cores.css">
+        
+    </head>
+    <body>
+        
+        <div id="media">
+            <button type="button" id="new" class="btn">I'M PROUD TO BE</button>
+            <canvas id="canvas" width="800" height="400">Seu navegador está desatualizado. Baixe uma nova versão!</canvas>
+        </div>
+        
+        <script>
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const cw = 800; //flags width
+            const ch = 400; //flags height
+            const txtcolor = '#2e2c2cc9';
+        
+            function drawRect(x, y, w, h, color){
+                ctx.fillStyle = color;
+                ctx.fillRect(x, y, w, h);
+            }
+            
+            //cores em hexadecimal
+            function drawLGBTflag(){
+                let stripes = 6;
+                drawRect(0, 0, cw, ch/stripes, '#e40303');
+                drawRect(0, 0+ch/stripes, cw, ch/stripes, '#ff8c00');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, '#ffed00');
+                drawRect(0, 0+3*ch/stripes, cw, ch/stripes, '#008026');
+                drawRect(0, 0+4*ch/stripes, cw, ch/stripes, '#004dff');
+                drawRect(0, 0+5*ch/stripes, cw, ch/stripes, '#750787');
+
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("GAY", cw-550, 280);
+            }
+
+            //cores em rgb
+            function drawTransFlag(){
+                let stripes = 5;
+                drawRect(0, 0, cw, ch/stripes, 'rgb(91,206,250)');
+                drawRect(0, 0+ch/stripes, cw, ch/stripes, 'rgb(245,69,184)');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, 'rgb(255,255,255)');
+                drawRect(0, 0+3*ch/stripes, cw, ch/stripes, 'rgb(245,69,184)');
+                drawRect(0, 0+4*ch/stripes, cw, ch/stripes, 'rgb(91,206,250)');
+
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("TRANS", 130, 280);
+            }
+
+            //cores em hsl
+            function drawBiFlag() {
+                let stripes = 5;
+                drawRect(0, 0, cw, 2*ch/stripes, 'hsl(329,98%,42%)');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, 'hsl(304,32%,46%)');
+                drawRect(0, 0+3*ch/stripes, cw, 2*ch/stripes, 'hsl(220,100%,33%)');
+
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("BI", 300, 280);
+            }
+
+            //cores em hexadecimal
+            function drawLesbianFlag() {
+                let stripes = 7;
+                drawRect(0, 0, cw, ch/stripes, '#d52d00');
+                drawRect(0, 0+ch/stripes, cw, ch/stripes, '#ef7627');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, '#ff9a56');
+                drawRect(0, 0+3*ch/stripes, cw, ch/stripes, '#fff');
+                drawRect(0, 0+4*ch/stripes, cw, ch/stripes, '#d162a4');
+                drawRect(0, 0+5*ch/stripes, cw, ch/stripes, '#b55690');
+                drawRect(0, 0+6*ch/stripes, cw, ch/stripes, '#a30262');
+
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("LESBIAN", cw-730, 280);
+            }
+
+            //cores em rgb
+            function drawNBflag() {
+                let stripes = 4;
+                drawRect(0, 0, cw, ch/stripes, 'rgb(252,244,52)');
+                drawRect(0, 0+ch/stripes, cw, ch/stripes, 'rgb(252,252,252)');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, 'rgb(156,89,209)');
+                drawRect(0, 0+3*ch/stripes, cw, ch/stripes, 'rgb(22,22,22)');
+
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("NB", 300, 280);
+            }
+
+            //cores em hsl
+            function drawPanFlag() {
+                let stripes = 3;
+
+                drawRect(0, 0, cw, ch/stripes, 'hsl(331,100%,56%)');
+                drawRect(0, 0+ch/stripes, cw, ch/stripes, 'hsl(51,100%,50%)');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, 'hsl(201,100%,56%)'); 
+                
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("PAN", cw-560, 280);
+            }
+
+            //cores em hexadecimal
+            function drawAceFlag() {
+                let stripes = 4;
+
+                drawRect(0, 0, cw, ch/stripes, '#420042');
+                drawRect(0, 0+ch/stripes, cw, ch/stripes, '#8fa3a5');
+                drawRect(0, 0+2*ch/stripes, cw, ch/stripes, '#FFF');
+                drawRect(0, 0+3*ch/stripes, cw, ch/stripes, '#815d81');  
+                
+                ctx.fillStyle = txtcolor;
+                ctx.font = "200px Impact";
+                ctx.fillText("ACE", cw-550, 280);
+            }
+            
+            let counter = 0;
+
+            var button = document.getElementById('new'); 
+            button.onclick = function(e) {
+                let flags = [drawAceFlag, drawBiFlag, drawLGBTflag, drawLesbianFlag, drawNBflag,          drawTransFlag, drawPanFlag];
+                console.log(counter);
+
+                flags[counter]();
+                counter++;
+
+                if (counter >= flags.length) {
+                    counter = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
