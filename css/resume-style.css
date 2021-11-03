@@ -57,7 +57,7 @@ header {
     justify-content: center;
     align-items: flex-end;
     padding-top: 0.4rem;
-    display: flex;
+
 }
 
 .left-column {
@@ -172,4 +172,43 @@ a:active {
 a:visited {
     color: #8f5bbd;
     text-shadow: 3px 3px 2px #1e1e1e46;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.skills-label {
+    line-height: 0.5em;
+    text-align: right;
+}
+
+.skills-bar {
+    height: 4.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rate-bar {
+    height: 0.5em;
+    width: 11em;
+    border-radius: 1em;
+    border: 0.2em solid #1E1E1E;
+}
+
+#creative {
+    background-image: linear-gradient(to right, #438A55 70%, #438A5500 30%);
+
+}
+
+#public-speaking {
+    background-image: linear-gradient(to right, #438A55 60%, #438A5500 40%);
+}
+
+#teaching {
+    background-image: linear-gradient(to right, #438A55 85%, #438A5500 15%);
 }
