@@ -4,7 +4,7 @@ body {
 
 main {
     width: 85em;
-    height: 2070px;
+    height: auto;
     max-width: 100%;
 
     display: flex;
