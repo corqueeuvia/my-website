@@ -109,7 +109,7 @@ a {
 .history {
     width: 550px;
 }
-.history-title {
+.history-title, .faq-title {
     font-family: 'Marzo';
     font-size: 35px;
     letter-spacing: 5px;
@@ -188,6 +188,25 @@ button {
     top: 570px;
     left: 900px;
     
+}
+#faq {
+    flex-direction: column;
+    height: auto;
+}
+/* .faq-title {
+    font-family:  "Marzo";
+    font-size: 30px;
+} */
+.faq-sub, .faq-text {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.faq-sub {
+    font-size: 20px;
+    color: rgb(108,136,1);
+    letter-spacing: 3px;
+}
+.faq-text {
+    color: #818181
 }
 footer{
     width: 80%;
