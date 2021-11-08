@@ -81,7 +81,8 @@ a {
 
     width: 50%;
     height: 607px;
-    justify-content:center
+    justify-content:center;
+    align-items: center;
  
 }
 .bottle{
@@ -99,17 +100,31 @@ a {
 
     position: relative;
     left: 155px;
-    top: 400px;
+    top: 150px;
 }
 .logo-solid>.logo-text {
     color: #e2f0d0;
 
+}
+.history {
+    width: 550px;
+}
+.history-title {
+    font-family: 'Marzo';
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: rgb(108,136,1);
+}
+.history-text {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #818181;
 }
 .right-side{
     /* background-color: saddlebrown; */
     width: 300px;
 
     flex-direction: column;
+
 }
 .main-title{
     height: 230px;
@@ -119,6 +134,7 @@ a {
     font-size: 50px;
     line-height: 1.5em;
     color: rgb(108,136,1);
+
 }
 button {
     all: unset;
@@ -147,6 +163,10 @@ button {
     position: absolute;
     left: 500px;
     top: 550px;
+}
+.juice-glass {
+    width: 416px;
+    height: 586px;
 }
 .chat-btn {
     height: 40px;
