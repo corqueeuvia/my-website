@@ -185,18 +185,15 @@ button {
     vertical-align:middle;
     
     position: fixed;
-    top: 570px;
-    left: 900px;
+    bottom: 20px;
+    right: 20px;
     
 }
 #faq {
     flex-direction: column;
     height: auto;
 }
-/* .faq-title {
-    font-family:  "Marzo";
-    font-size: 30px;
-} */
+
 .faq-sub, .faq-text {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
