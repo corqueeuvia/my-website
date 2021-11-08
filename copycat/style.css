@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Marzo";
+    src: url("files/1e6ec96c95301fa73aa1d026f161a269.eot"); /* IE9*/
+    src: url("files/1e6ec96c95301fa73aa1d026f161a269.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("files/1e6ec96c95301fa73aa1d026f161a269.woff2") format("woff2"), /* chrome、firefox */
+    url("files/1e6ec96c95301fa73aa1d026f161a269.woff") format("woff"), /* chrome、firefox */
+    url("files/1e6ec96c95301fa73aa1d026f161a269.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("files/1e6ec96c95301fa73aa1d026f161a269.svg#Marzo W00 Regular") format("svg");
+}
+body {
+    background-color: #fefefe;
+
+    flex-direction: column;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+main {
+    width: 80%;
+    height: auto;
+
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 80%;
+    height: 130px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    all: unset;
+    cursor: pointer;
+    /* color: magenta; */
+}
+.logo-stroke{
+    width: 125px;
+    height: 125px;
+
+    border: 2px solid #ff9f24;
+    border-radius: 50%;
+
+    align-items: center;
+}
+.logo-text {
+    width: inherit;
+
+    font-family: "Marzo";
+    font-size: 35px;
+    color: #ff9f24;
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+.top-nav-bar{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #818181;
+}
+.nav-bar-link{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.bag-icon{
+    font-size: 45px;
+    color: #b5d831;
+}
+.main-display{
+    /* background-color: palevioletred; */
+
+    height: 700px;
+    width: 80%;
+
+    justify-content: left;
+}
+.left-side {
+    /* background-color: purple; */
+
+    width: 50%;
+    height: 607px;
+    justify-content:center
+ 
+}
+.bottle{
+    width: 185px;
+    height: 607px;
+}
+.logo-solid{
+    width: 125px;
+    height: 125px;
+
+    background-color: #ff9f24aa;
+    border-radius: 50%;
+
+    align-items: center;
+
+    position: relative;
+    left: 155px;
+    top: 400px;
+}
+.logo-solid>.logo-text {
+    color: #e2f0d0;
+
+}
+.right-side{
+    /* background-color: saddlebrown; */
+    width: 300px;
+
+    flex-direction: column;
+}
+.main-title{
+    height: 230px;
+    width: 600px;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    line-height: 1.5em;
+    color: rgb(108,136,1);
+}
+button {
+    all: unset;
+    cursor: pointer;
+}
+.shop{
+    width: 170px;
+    height: 40px;
+    background-color: #b5d831;
+
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 100;
+    font-size: 23px;
+    color: #fefefe;
+
+    transition-duration: 1s;
+}
+.shop:hover {
+    background-color: #cccccc;
+}
+.fruit{
+    width: 500px;
+    height: 300px;
+
+    position: absolute;
+    left: 500px;
+    top: 550px;
+}
+.chat-btn {
+    height: 40px;
+    width: 400px;
+
+    background-color: #ff9f24;
+    border-radius: 17px;
+    font-family:  "Marzo";
+    font-size: 25px;
+    color: #fefefe;
+    padding: 5px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align:middle;
+    
+    position: fixed;
+    top: 570px;
+    left: 900px;
+    
+}
+footer{
+    width: 80%;
+    height: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #818181;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.a-color {
+    color: #ff9f24;
+}
+.company-info{
+    line-height: 1px;
+}
+.social{
+    font-size: 35px;
+}
+.error {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 100px;
+    color: #cccccc;
+    font-weight: bold;
+}
