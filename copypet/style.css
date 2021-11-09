@@ -217,7 +217,7 @@ footer a:hover {
 .error-img {
     height: 500px;
 }
-.error-btn {
+#error-btn {
     background-color: #476d55;
     color: #f7f7f7;
 }
