@@ -207,6 +207,20 @@ footer a:hover {
     
     flex-direction: column;
 }
+.error {
+    width: 100%;
+    height: 600px;
+
+    align-items:flex-start;
+    justify-content: center;
+}
+.error-img {
+    height: 500px;
+}
+.error-btn {
+    background-color: #476d55;
+    color: #f7f7f7;
+}
 
 /* PARTE DO SLIDESHOW */
 .slideshow-container {
